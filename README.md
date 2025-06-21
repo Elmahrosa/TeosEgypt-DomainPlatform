@@ -1,71 +1,175 @@
-# TeosEgypt-DomainPlatform
-Repository created autonomously  by Elmahrosa international 
-# TeosEgypt-DomainPlatform
+---
 
-## Overview
+# 🐫 TeosEgypt-DomainPlatform
 
-The TeosEgypt-DomainPlatform is a pioneering decentralized Web3 domain registration platform built on the Solana blockchain. It enables users to register, manage, and trade .teos domains as NFTs using \$TEOS Egypt tokens. This platform combines the rich cultural heritage of ancient Egypt with cutting-edge blockchain technology, creating a unique digital identity solution.
+TeosEgypt-DomainPlatform adalah platform pendaftaran domain Web3 terdesentralisasi berbasis Solana yang memungkinkan pengguna mendaftarkan, mengelola, dan memperdagangkan domain .teos sebagai NFT. Dibangun oleh Elmahrosa Internasional, platform ini menyatukan teknologi blockchain mutakhir dengan kekayaan warisan budaya Mesir Kuno.
 
-## Features
+![TeosEgypt Showcase](public/screenshots/teosegypt-cover.png)
 
-- Decentralized Domain Registration
-- Cultural Branding Integration
-- Multi-Payment Support
-- NFT Marketplace Integration
-- Egyptian-Themed UI Design
-- Multi-Language Support
-- Wallet Integration
-- Mobile-Responsive Design
+---
 
-## Technical Specifications
+## 📌 Ringkasan Fitur
 
-### Programming Languages
+- 🔐 Pendaftaran Domain Terdesentralisasi
+- 🏛️ Integrasi Branding Budaya Mesir
+- 💸 Dukungan Pembayaran Multi-token (termasuk $TEOS Egypt)
+- 🛍️ Integrasi Marketplace NFT (Magic Eden)
+- 🌐 Dukungan Multibahasa
+- 👛 Integrasi Dompet (Phantom, Solflare)
+- 📱 Desain UI/UX Responsif Bertema Mesir
+- 📤 Penyimpanan Metadata NFT di IPFS/Arweave
 
-- **Rust**: Primary language for smart contract development.
-- **TypeScript/JavaScript**: Frontend development using @solana/web3.js.
-- **Node.js**: Backend services layer and blockchain interaction services.
+---
 
-### Frameworks & Libraries
+## 🛠️ Teknologi yang Digunakan
 
-- **Anchor Framework**: For smart contract development.
-- **React with Next.js**: Frontend framework.
-- **TailwindCSS**: CSS framework for responsive design.
-- **@solana/web3.js**: Core Solana blockchain interaction library.
-- **Wallet Adapter Libraries**: For wallet integration.
+| Komponen | Teknologi |
+|---------|------------|
+| Kontrak Pintar | `Rust`, `Anchor Framework` |
+| Frontend | `Next.js`, `React`, `TailwindCSS` |
+| Backend | `Node.js`, `Express.js`, `TypeScript` |
+| Blockchain Layer | `Solana`, `@solana/web3.js`, `SPL-Token`, `Anchor` |
+| Dompet & NFT | `Phantom`, `Solflare`, `Magic Eden` |
+| Basis Data | `PostgreSQL`, `Redis` |
+| Penyimpanan Terdesentralisasi | `IPFS`, `Arweave` |
 
-### Open Source Dependencies
+---
 
-- **@solana/web3.js**: Core Solana blockchain interaction library.
-- **@solana/spl-token**: SPL Token program integration.
-- **@solana/spl-token-metadata**: Libraries for creating, minting, and fetching data for SPL tokens.
-- **@coral-xyz/anchor**: Anchor framework for smart contract development.
+## 📁 Struktur Proyek
 
-### Third-Party Services
+TeosEgypt-DomainPlatform/ │ ├── contracts/              # Program Solana (Rust + Anchor) ├── frontend/               # Aplikasi web (Next.js + TailwindCSS) ├── backend/                # Layanan backend API (Node.js) ├── migrations/             # Anchor migration scripts ├── scripts/                # Deployment / utilitas ├── docker/                 # Docker konfigurasi ├── docs/                   # Dokumentasi teknis └── README.md               # Dokumentasi utama proyek
 
-- **Solana RPC Providers**: QuickNode RPC endpoints for reliable blockchain connectivity.
-- **Magic Eden**: Primary NFT marketplace integration.
-- **Phantom and Solflare**: Supported wallets for secure trading.
+---
 
-### Databases & Storage
+## ⚙️ Prasyarat
 
-- **IPFS/Arweave Integration**: For decentralized storage of NFT metadata and cultural assets.
-- **PostgreSQL**: Off-chain analytics and user session data.
-- **Redis Cache**: API response caching and session management.
+- Node.js v18+
+- Rust Stable
+- Solana CLI (`solana --version`)
+- Anchor CLI (`anchor --version`)
+- Docker (opsional)
+- Yarn atau NPM
 
-## Setup Instructions
+---
 
-### Prerequisites
+## 🚀 Instalasi & Penggunaan
 
-- Node.js (v18+)
-- Rust (latest stable version)
-- Solana CLI
-- Anchor CLI
-- Docker (for containerization)
+### 1. Kloning Repositori
+```bash
+git clone https://github.com/Elmahrosa/TeosEgypt-DomainPlatform.git
+cd TeosEgypt-DomainPlatform
 
-### Installation
+2. Jalankan Local Solana
 
-1. **Clone the Repository**
+solana-test-validator
 
-   ```bash
-   git clone https://github.com/Elmahrosa/TeosEgypt-DomainPlatform.git
-   cd TeosEgypt-DomainPlatform
+3. Deploy Program (Anchor)
+
+cd contracts
+anchor build
+anchor deploy
+
+4. Jalankan Frontend
+
+cd frontend
+npm install
+npm run dev
+
+5. Jalankan Backend
+
+cd backend
+npm install
+npm run dev
+
+
+---
+
+🧪 Pengujian
+
+Kontrak Pintar
+
+cd contracts
+anchor test
+
+Frontend (Next.js)
+
+cd frontend
+npm run test
+
+Backend
+
+cd backend
+npm run test
+
+
+---
+
+📦 Docker Support (Opsional)
+
+Jalankan seluruh stack menggunakan Docker:
+
+docker-compose up --build
+
+Edit docker-compose.yml untuk koneksi Solana, Redis, dan PostgreSQL.
+
+
+---
+
+🧠 Roadmap
+
+[x] Pendaftaran domain .teos sebagai NFT
+
+[x] Integrasi Magic Eden
+
+[ ] Subdomain support (user.domain.teos)
+
+[ ] Integrasi Oracle untuk validasi nama domain
+
+[ ] DNSBridge untuk akses Web2 ke domain .teos
+
+[ ] Tata Kelola DAO berbasis $TEOS token
+
+
+
+---
+
+🛡️ Keamanan
+
+✅ Validasi domain name sebelum mint
+
+✅ Pencegahan duplikasi token .teos
+
+🔒 Enkripsi koneksi wallet
+
+📋 Audit keamanan eksternal (dalam rencana)
+
+
+
+---
+
+🤝 Kontribusi
+
+Kami menyambut kontribusi! Silakan baca CONTRIBUTING.md untuk panduan kontribusi.
+
+git checkout -b fitur-baru
+git commit -m "feat: tambahkan fitur x"
+git push origin fitur-baru
+
+
+---
+
+📄 Lisensi
+
+Lisensi: MIT License.
+Lihat LICENSE untuk detail.
+
+
+---
+
+📞 Kontak & Komunitas
+
+🌍 Situs resmi: https://teosegypt.io
+
+💬 Discord: Elmahrosa Dev Hub
+
+🐦 Twitter: @teosegypt
