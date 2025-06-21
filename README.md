@@ -2,7 +2,6 @@
 
 TeosEgypt-DomainPlatform adalah platform pendaftaran domain Web3 terdesentralisasi berbasis Solana yang memungkinkan pengguna mendaftarkan, mengelola, dan memperdagangkan domain .teos sebagai NFT. Dibangun oleh Elmahrosa Internasional, platform ini menyatukan teknologi blockchain mutakhir dengan kekayaan warisan budaya Mesir Kuno.
 
-![TeosEgypt Showcase 
 
 📌 Ringkasan Fitur
 
