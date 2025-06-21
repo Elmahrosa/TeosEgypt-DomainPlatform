@@ -1,4 +1,3 @@
----
 
 # 🐫 TeosEgypt-DomainPlatform
 
@@ -8,7 +7,7 @@ TeosEgypt-DomainPlatform adalah platform pendaftaran domain Web3 terdesentralisa
 
 ---
 
-## 📌 Ringkasan Fitur
+📌 Ringkasan Fitur
 
 - 🔐 Pendaftaran Domain Terdesentralisasi
 - 🏛️ Integrasi Branding Budaya Mesir
