@@ -163,7 +163,7 @@ Lihat LICENSE untuk detail.
 
 📞 Kontak & Komunitas
 
-🌍 Situs resmi: https://teosegypt.io
+🌍 Situs resmi: https://teosegypt.org
 
 💬 Discord: Elmahrosa Dev Hub
 
