@@ -1,4 +1,5 @@
 “Part of the TEOS Egypt Blockchain Ecosystem — a unified civil, financial, and smart-city infrastructure powering digital banking, civic governance, DeFi, Pi integration, and national blockchain services.”
+![TESL](https://pharaoh.teosegypt.com/badges/TESL.svg)
 
 # 🏷️ TEOS Egypt Domain Platform
 ### Decentralized Web3 Domains & Digital Identity for the TEOS Egypt Ecosystem
