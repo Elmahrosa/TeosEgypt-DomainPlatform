@@ -68,3 +68,12 @@ Supported TLD concepts:
 
 ## 📂 Repository Structure
 
+- **/pages** – Directory for page components or routes
+- **/styles** – Directory for CSS or styling files
+- **/public** – Directory for static assets
+- **LICENSE** – License file
+- **README.md** – Project documentation
+- **index.html** – Main HTML entry point
+- **package.json** – Node.js/npm configuration
+- **tailwind.config.js** – Tailwind CSS configuration
+- **postcss.config.js** – PostCSS configuration
